@@ -1,0 +1,25 @@
+meta {
+  name: Create Card
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5000/api/bankings
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYzNzNiMTBlZjA0ZmUyNWFhZGU1Nzg5IiwiaWF0IjoxNzE0OTc2MjE5LCJleHAiOjE3MTUwNjI2MTl9.CkaFfd6-Z-7vJu0R3Z19lh21e4fgTW88eVuPHkk6bp4
+}
+
+body:json {
+  {
+    "type" : "MANDIRI",
+    "card_number" : "222222",
+    "balance" : "99819",
+    "limit" : "10000000",
+    "pin" : "123456789"
+  }
+}

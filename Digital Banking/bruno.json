@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Digital Banking",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

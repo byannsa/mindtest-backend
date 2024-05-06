@@ -1,0 +1,25 @@
+meta {
+  name: Update Card
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:5000/api/bankings/6638773bdddc83958259185f
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYzNzNiMTBlZjA0ZmUyNWFhZGU1Nzg5IiwiaWF0IjoxNzE0OTc2MjE5LCJleHAiOjE3MTUwNjI2MTl9.CkaFfd6-Z-7vJu0R3Z19lh21e4fgTW88eVuPHkk6bp4
+}
+
+body:json {
+  {
+    "type" : "BCA",
+    "card_number" : "1111111",
+    "balance" : "222222",
+    "limit" : "10000000",
+    "pin" : "123456"
+  }
+}
